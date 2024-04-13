@@ -19,19 +19,22 @@ const Project = ({
   const ref = useRef<HTMLDivElement>(null);
 
   return (
-    <div ref={ref} className='group mb-8'>
-      <section className='duration-300 flex flex-col sm:grid sm:grid-cols-2 max-w-[57rem] rounded-lg overflow-hidden transition text-white bg-[#006466]/15 hover:bg-[#006466]/30 '>
-        <div className='md:p-10'>
+    <div ref={ref} className='group lg-8 relative  mb-8'>
+      <section
+        className='duration-300 flex flex-col lg:grid lg:grid-cols-2
+       h-full  lg:max-w-[65rem] rounded-lg overflow-hidden transition text-white bg-[#006466]/15 hover:bg-[#006466]/30 max-w-[28.25rem]'
+      >
+        <div className='lg:p-8 lg:relative overflow-hidden'>
           <Image
             src={imageUrl}
             alt='Project I worked on'
             quality={95}
-            className='rounded-t-lg sm:rounded-lg
+            className='rounded-t-lg lg:rounded-lg
             transition object-top
-            sm:group-hover:scale-[1.04] '
+            sm:group-hover:scale-[1.04] lg:w-full lg:h-full lg:absolute'
           />
         </div>
-        <div className='p-6 md:py-10 md:pr-10 space-y-8'>
+        <div className='p-6 sm:py-10 sm:pr-10 space-y-8'>
           <div className='text-2xl font-semibold flex justify-between'>
             {title}
             <div className='flex space-x-4'>
