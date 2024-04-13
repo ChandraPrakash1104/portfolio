@@ -20,9 +20,9 @@ const Intro = () => {
       className='my-28 max-w-[65rem] text-center sm:mb-0 scroll-mt-[100rem] text-slate-300'
     >
       <div className='mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-3xl'>
-        <span className='font-bold'>Hello, I'm Chandra Prakash.</span> I'm a{' '}
-        <span className='font-bold'>full-stack developer</span>. I enjoy
-        building <span className='italic'>sites & apps</span>. My focus is{' '}
+        <span className='font-bold'>Hello, I&apos;m Chandra Prakash.</span>{' '}
+        I&apos;m a <span className='font-bold'>full-stack developer</span>. I
+        enjoy building <span className='italic'>sites & apps</span>. My focus is{' '}
         <span className='underline'>MERN stack and (Next.js)</span>.
       </div>
       <div className='flex flex-col sm:flex-row items-center justify-center gap-5 px-4 text-lg font-medium'>

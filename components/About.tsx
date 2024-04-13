@@ -15,7 +15,7 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className='mb-3'>
-        I'm a student and a{' '}
+        I&apos;m a student and a{' '}
         <span className='font-medium'>full-stack web developer</span>.{' '}
         <span className='italic'>My favorite part of programming</span> is the
         problem-solving aspect. I <span className='underline'>love</span> the
