@@ -14,14 +14,14 @@ export default function Contact() {
     <section
       id='contact'
       ref={ref}
-      className='mb-20 sm:mb-28 w-[min(100%,38rem)] text-center'
+      className='mb-20 sm:mb-28 w-[min(100%,38rem)] text-center text-font-primary'
     >
       <SectionHeading>Contact me</SectionHeading>
 
-      <p className='-mt-4 text-white/80'>
+      <p className='-mt-4 text-font-secondary'>
         Please contact me directly at{' '}
         <a
-          className='underline text-[#76ABAE]'
+          className='underline text-font-primary'
           href='mailto:chandraprakash1104@gmail.com'
         >
           chandraprakash1104@gmail.com
@@ -43,7 +43,7 @@ export default function Contact() {
         }}
       >
         <input
-          className='h-14 px-4 rounded-lg bg-[#76ABAE] bg-opacity-15 focus:bg-opacity-25 transition-all outline-none placeholder-gray-100/50 text-gray-100'
+          className='h-14 px-4 rounded-lg bg-[#76ABAE] bg-opacity-15 focus:bg-opacity-25 transition-all outline-none placeholder-gray-100/50 text-font-primary'
           name='senderEmail'
           type='email'
           required
@@ -51,7 +51,7 @@ export default function Contact() {
           placeholder='Your email'
         />
         <textarea
-          className='h-52 my-3 p-4 rounded-lg bg-[#76ABAE] bg-opacity-15 focus:bg-opacity-25 transition-all outline-none placeholder-gray-100/50 text-gray-100'
+          className='h-52 my-3 p-4 rounded-lg bg-[#76ABAE] bg-opacity-15 focus:bg-opacity-25 transition-all outline-none placeholder-gray-100/50 text-font-primary'
           name='message'
           placeholder='Your message'
           required
@@ -69,7 +69,7 @@ function SubmitBtn() {
   return (
     <button
       type='submit'
-      className='group flex items-center justify-center gap-2 h-[3rem] w-[8rem] text-white rounded-lg outline-none transition-all focus:scale-105 hover:scale-105 hover:bg-[#13232C]/80 active:scale-100 bg-[#0E1C26]/80 disabled:scale-100 disabled:bg-opacity-65'
+      className='group flex items-center justify-center gap-2 h-[3rem] w-[8rem] text-font-primary rounded-lg outline-none transition-all focus:scale-105 hover:scale-105 hover:bg-[#13232C]/80 active:scale-100 bg-[#0E1C26]/80 disabled:scale-100 disabled:bg-opacity-65'
       disabled={pending}
     >
       {pending ? (

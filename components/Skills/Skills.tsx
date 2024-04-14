@@ -16,7 +16,7 @@ export default function Skills() {
       className='mb-28 max-w-[65rem] scroll-mt-28 text-center sm:mb-40'
     >
       <SectionHeading>My skills</SectionHeading>
-      <ul className='flex flex-wrap justify-center gap-8 text-lg text-gray-800'>
+      <ul className='flex flex-wrap justify-center gap-8'>
         {skillsData.map((skill, index) => (
           <li
             className='rounded-lg px-5 py-3 bg-[#272640]/20 hover:bg-[#272640]/40 transition-all duration-300'

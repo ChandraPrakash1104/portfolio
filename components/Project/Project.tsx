@@ -3,7 +3,7 @@
 import { useRef } from 'react';
 import { projectsData } from '@/lib/data';
 import Image from 'next/image';
-import { ImNewTab } from 'react-icons/im';
+import { CiGlobe } from 'react-icons/ci';
 import { FaGithub } from 'react-icons/fa';
 
 type ProjectProps = (typeof projectsData)[number];
@@ -22,7 +22,7 @@ const Project = ({
     <div ref={ref} className='group lg-8 relative  mb-8'>
       <section
         className='duration-300 flex flex-col lg:grid lg:grid-cols-2
-       h-full  lg:max-w-[65rem] rounded-lg overflow-hidden transition text-white bg-[#006466]/15 hover:bg-[#006466]/30 max-w-[28.25rem]'
+       h-full  lg:max-w-[65rem] rounded-lg overflow-hidden transition text-font-primary bg-[#006466]/15 hover:bg-[#006466]/30 max-w-[28.25rem]'
       >
         <div className='lg:p-8 lg:relative overflow-hidden'>
           <Image
@@ -40,19 +40,21 @@ const Project = ({
             <div className='flex space-x-4'>
               {workingUrl.length > 0 && (
                 <a href={workingUrl} target='_blank' rel='noopener noreferrer'>
-                  <ImNewTab className='transition-all duration-300 text-[#bce1e3]/50 group-hover:text-[#bce1e3]/90' />
+                  <CiGlobe className='transition-all text-accent group-hover:text-font-secondary' />
                 </a>
               )}
               <a href={gitUrl} target='_blank' rel='noopener noreferrer'>
-                <FaGithub className='text-[#bce1e3]/50 group-hover:text-[#bce1e3]/90' />
+                <FaGithub className='transition-all text-accent group-hover:text-font-secondary' />
               </a>
             </div>
           </div>
-          <p className='mt-2 leading-relaxed text-white/70'>{description}</p>
+          <p className='mt-2 leading-relaxed text-font-primary'>
+            {description}
+          </p>
           <ul className='flex flex-wrap mt-4 gap-2 sm:mt-auto'>
             {tags.map((tag, index) => (
               <li
-                className='transition-all duration-300 bg-[#272640]/20 group-hover:bg-[#272640]/40 px-2 py-2 text-[0.7rem] uppercase tracking-wider rounded-lg text-white/70'
+                className='transition-all duration-300 bg-[#272640]/20 group-hover:bg-[#272640]/40 px-2 py-2 text-[0.7rem] uppercase tracking-wider rounded-lg text-font-primary'
                 key={index}
               >
                 {tag}

@@ -1,7 +1,7 @@
 import About from '@/components/About';
 import Contact from '@/components/Contact';
 import Intro from '@/components/Intro';
-import Projects from '@/components/Projects';
+import Projects from '@/components/Project/Projects';
 import SectionDivider from '@/components/SectionDivider';
 import Skills from '@/components/Skills/Skills';
 
