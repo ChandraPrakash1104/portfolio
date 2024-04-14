@@ -53,7 +53,14 @@ export const projectsData = [
     title: 'Bloghub',
     description:
       'Built with ReactJS, Hono, and Cloudflare Workers, this full-stack web application empowers users to create and manage their own blogs. Leveraging the power of ReactJS for the user interface, Hono for the backend, and Cloudflare Workers for scalable and secure hosting.',
-    tags: ['React.js', 'Node.js', 'Postgress', 'Tailwind', 'Prisma'],
+    tags: [
+      'React.js',
+      'Hono',
+      'Cloudflare Workers',
+      'Postgress',
+      'Tailwind',
+      'Prisma',
+    ],
     imageUrl: bloghub,
     workingUrl: '',
     gitUrl: 'https://github.com/ChandraPrakash1104/blog-hub',
@@ -62,7 +69,7 @@ export const projectsData = [
     title: 'ChatHive',
     description:
       'A full stack web application, users can chat, send friends invitations, and foster real relationships. Leveraging technologies such as React, Material-UI, Node.js, Express, and MongoDB, the platform ensures a smooth and easy user experience to connect.',
-    tags: ['React.js', 'Node.js', 'Postgress', 'Tailwind', 'Prisma'],
+    tags: ['React.js', 'Node.js', 'MongoDb', 'MUI', 'Socket.io'],
     imageUrl: chathive,
     workingUrl: '',
     gitUrl: 'https://github.com/ChandraPrakash1104/chat-hive',
