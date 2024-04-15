@@ -82,9 +82,6 @@ function SubmitBtn() {
       type='submit'
       className='group flex items-center justify-center gap-2 h-[3rem] w-[8rem] text-font-primary rounded-lg outline-none transition-all focus:scale-105 hover:scale-105 hover:bg-[#13232C]/80 active:scale-100 bg-[#0E1C26]/80 disabled:scale-100 disabled:bg-opacity-65'
       disabled={pending}
-      onClick={() => {
-        toast.success('hello');
-      }}
     >
       {pending ? (
         <div className='h-5 w-5 animate-spin rounded-xl border-b-2 border-white'></div>
