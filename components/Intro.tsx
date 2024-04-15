@@ -39,7 +39,7 @@ const Intro = () => {
         </Link>
 
         <Link
-          className='group bg-white text-font-inverted px-7 py-3 flex items-center gap-2 rounded-xl outline-none focus:scale-105 hover:scale-105 active:scale-100 transition cursor-pointer borderBlack '
+          className='group bg-inverted text-font-inverted px-7 py-3 flex items-center gap-2 rounded-xl outline-none focus:scale-105 hover:scale-105 active:scale-100 transition cursor-pointer borderBlack '
           href='/CV.pdf'
           download
         >
@@ -48,7 +48,7 @@ const Intro = () => {
         </Link>
         <div className='flex space-x-5'>
           <Link
-            className='bg-white p-4 text-accent hover:text-[#0077B5] flex items-center gap-2 rounded-xl focus:scale-[1.10] hover:scale-[1.10] active:scale-105 transition cursor-pointer borderBlack '
+            className='bg-inverted p-4 text-accent hover:text-[#0077B5] flex items-center gap-2 rounded-xl focus:scale-[1.10] hover:scale-[1.10] active:scale-105 transition cursor-pointer borderBlack '
             href='https://www.linkedin.com/in/chandraprakash1104/'
             target='_blank'
           >
@@ -56,7 +56,7 @@ const Intro = () => {
           </Link>
 
           <Link
-            className='bg-white p-4 text-accent flex items-center gap-2 text-[1.35rem] rounded-xl focus:scale-[1.10] hover:scale-[1.10] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack '
+            className='bg-inverted p-4 text-accent flex items-center gap-2 text-[1.35rem] rounded-xl focus:scale-[1.10] hover:scale-[1.10] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack '
             href='https://github.com/ChandraPrakash1104'
             target='_blank'
           >
