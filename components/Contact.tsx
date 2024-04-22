@@ -21,12 +21,16 @@ export default function Contact() {
       className='mb-20 sm:mb-28 w-[min(100%,38rem)] text-center text-font-primary'
       initial={{
         opacity: 0,
+        y: 150,
       }}
       whileInView={{
         opacity: 1,
+        y: 0,
       }}
       transition={{
-        duration: 2,
+        duration: 1,
+        opacity: { duration: 1 },
+        y: { duration: 0.5 },
       }}
       viewport={{
         once: true,
