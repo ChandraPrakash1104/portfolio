@@ -1,26 +1,47 @@
-import Image from 'next/image';
 import { Tooltip } from 'react-tooltip';
 import 'react-tooltip/dist/react-tooltip.css';
+import { motion } from 'framer-motion';
 
 interface SkillIconProps {
   src: string;
   name: string;
+  delay: number;
 }
 
-const SkillIcon = ({ src, name }: SkillIconProps) => {
+const SkillIcon = ({ src, name, delay }: SkillIconProps) => {
   return (
     <div
       className='flex items-center justify-center transition-all duration-300 z-10 relative group'
       data-tooltip-content={name}
       data-tooltip-id='tool-tooltip'
     >
-      <Image src={src} alt={name} width={40} height={40} className='z-10' />
-      <Image
+      <motion.img
         src={src}
-        alt={name}
-        width={50}
-        height={50}
-        className='absolute blur-[1.5rem] opacity-50 group-hover:opacity-100 transition-all duration-200 '
+        alt=''
+        initial={{ opacity: 0, x: 100, scale: 0.5 }}
+        whileInView={{ opacity: 1, x: 1, scale: 1 }}
+        viewport={{
+          once: true,
+        }}
+        transition={{
+          duration: 1,
+          delay: delay,
+          x: { duration: 0.2 },
+          scale: { duration: 0.4 },
+        }}
+      />
+
+      <motion.img
+        className='blur-md absolute -z-10 group-hover:opacity-90'
+        src={src}
+        alt=''
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 0.6 }}
+        whileHover={{ opacity: 0.8 }}
+        viewport={{
+          once: true,
+        }}
+        transition={{ duration: 1, delay: delay }}
       />
       <Tooltip
         id='tool-tooltip'

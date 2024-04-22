@@ -5,6 +5,7 @@ import { projectsData } from '@/lib/data';
 import Image from 'next/image';
 import { CiGlobe } from 'react-icons/ci';
 import { FaGithub } from 'react-icons/fa';
+import { motion } from 'framer-motion';
 
 type ProjectProps = (typeof projectsData)[number];
 
@@ -19,10 +20,30 @@ const Project = ({
   const ref = useRef<HTMLDivElement>(null);
 
   return (
-    <div ref={ref} className='group lg-8 relative  mb-8'>
-      <section
+    <motion.div
+      ref={ref}
+      className='group lg-8 relative  mb-8'
+      initial={{
+        opacity: 0,
+        y: 150,
+      }}
+      whileInView={{
+        opacity: 1,
+        y: 0,
+      }}
+      transition={{
+        duration: 1,
+        opacity: { duration: 1 },
+        y: { duration: 0.5 },
+      }}
+      viewport={{
+        once: true,
+      }}
+    >
+      <motion.div
         className='duration-300 flex flex-col lg:grid lg:grid-cols-2
-       h-full  lg:max-w-[65rem] rounded-lg overflow-hidden transition text-font-primary bg-[#006466]/15 hover:bg-[#006466]/30 max-w-[28.25rem]'
+       h-full  lg:max-w-[65rem] rounded-lg overflow-hidden transition text-font-primary bg-[#006466]/15 hover:bg-[#006466]/30 max-w-[28.25rem] ring-1 ring-highlight/30 ring-offset-0 '
+        whileHover={{ scale: 1.005 }}
       >
         <div className='lg:p-8 lg:relative overflow-hidden'>
           <Image
@@ -62,8 +83,8 @@ const Project = ({
             ))}
           </ul>
         </div>
-      </section>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 

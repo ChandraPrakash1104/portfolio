@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <header className='z-[99] relative w-full'>
-      <div className='fixed flex justify-center top-0 min-h-[3.6rem] w-full rounded-none border-b border-highlight/10 bg-primary bg-opacity-30 backdrop-blur-[0.5rem] sm:h-[3.25rem]'>
+      <div className='fixed flex justify-center top-0 min-h-[3.6rem] w-full rounded-none border-b border-highlight/30 bg-primary bg-opacity-30 backdrop-blur-[0.5rem] sm:h-[3.25rem]'>
         <nav className='flex sm:fixed top-[0.15rem] sm:left-1/2 h-12 sm:-translate-x-1/2 py-2'>
           <ul className='flex flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium sm:w-[initial] sm:flex-nowrap sm:gap-5'>
             {links.map((link) => (

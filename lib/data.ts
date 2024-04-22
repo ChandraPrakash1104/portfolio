@@ -79,82 +79,66 @@ export const projectsData = [
 export const skillsData = [
   {
     name: 'HTML',
-    svgUrl:
-      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg',
+    svgUrl: 'https://skillicons.dev/icons?i=html&theme=dark',
   },
   {
     name: 'CSS',
-    svgUrl:
-      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg',
+    svgUrl: 'https://skillicons.dev/icons?i=css&theme=dark',
   },
   {
     name: 'JavaScript',
-    svgUrl:
-      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg',
+    svgUrl: 'https://skillicons.dev/icons?i=javascript&theme=dark',
   },
   {
     name: 'TypeScript',
-    svgUrl:
-      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg',
+    svgUrl: 'https://skillicons.dev/icons?i=typescript&theme=dark',
   },
   {
     name: 'React',
-    svgUrl:
-      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg',
+    svgUrl: 'https://skillicons.dev/icons?i=react&theme=dark',
   },
   {
     name: 'Next.js',
-    svgUrl:
-      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg',
+    svgUrl: 'https://skillicons.dev/icons?i=next&theme=dark',
   },
   {
     name: 'Node.js',
-    svgUrl:
-      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg',
+    svgUrl: 'https://skillicons.dev/icons?i=nodejs&theme=dark',
   },
   {
     name: 'Git',
-    svgUrl:
-      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg',
+    svgUrl: 'https://skillicons.dev/icons?i=git&theme=dark',
   },
   {
     name: 'Tailwind',
-    svgUrl:
-      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg',
+    svgUrl: 'https://skillicons.dev/icons?i=tailwind&theme=dark',
   },
   {
     name: 'Prisma',
-    svgUrl:
-      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg',
+    svgUrl: 'https://skillicons.dev/icons?i=prisma&theme=dark',
   },
   {
     name: 'MongoDB',
-    svgUrl:
-      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg',
+    svgUrl: 'https://skillicons.dev/icons?i=mongodb&theme=dark',
   },
   {
     name: 'Redux',
-    svgUrl:
-      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg',
+    svgUrl: 'https://skillicons.dev/icons?i=redux&theme=dark',
   },
   {
     name: 'Express',
-    svgUrl:
-      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg',
+    svgUrl: 'https://skillicons.dev/icons?i=express&theme=dark',
   },
   {
     name: 'PostgreSQL',
-    svgUrl:
-      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-plain.svg',
+    svgUrl: 'https://skillicons.dev/icons?i=postgresql&theme=dark',
   },
   {
     name: 'Docker',
-    svgUrl:
-      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg',
+    svgUrl: 'https://skillicons.dev/icons?i=docker&theme=dark',
   },
   {
     name: 'Postman',
-    svgUrl:
-      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg',
+    svgUrl: 'https://skillicons.dev/icons?i=postman&theme=dark',
   },
 ] as const;
