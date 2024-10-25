@@ -41,13 +41,13 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: 'Furniro',
+    title: 'Cozynest',
     description:
-      'Furniro is a full-stack ecommerce website for a furniture store, built using React, Node.js, Prisma, and PostgreSQL. It offers a visually appealing user interface, product catalog, shopping cart, user authentication, and an admin portal, integrating modern web technologies to deliver a seamless ecommerce experience.',
+      'Cozynest is a full-stack ecommerce website for a furniture store, built using React, Node.js, Prisma, and PostgreSQL. It offers a visually appealing user interface, product catalog, shopping cart, user authentication, and an admin portal, integrating modern web technologies to deliver a seamless ecommerce experience.',
     tags: ['React.js', 'Node.js', 'Postgress', 'Tailwind', 'Prisma'],
     imageUrl: furniro,
-    workingUrl: 'https://furniro-livid.vercel.app/home',
-    gitUrl: 'https://github.com/ChandraPrakash1104/furniro',
+    workingUrl: 'https://cozynest-livid.vercel.app/home',
+    gitUrl: 'https://github.com/ChandraPrakash1104/cozynest',
   },
   {
     title: 'Bloghub',
